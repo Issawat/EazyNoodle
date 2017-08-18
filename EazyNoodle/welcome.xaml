@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="EazyNoodle.welcome"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EazyNoodle"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Padding="0,80,0,0">
+        <TextBlock Text="Welcome !" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+        <TextBlock Text="ยินดีต้อนรับลูกค้าครับ" FontSize="36" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+        <TextBlock Text="Please select buttons below to make an order." HorizontalAlignment="Center" Margin="0,0,0,30"/>
+        <TextBlock Text="เลือกปุ่มด้านล่างแล้วสั่งอาหารได้เลยครับ" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="guestlogin" Margin="5" Click="guestlogin_Click">
+                <StackPanel Padding="5" Width="200">
+                    <TextBlock Text="ORDER" HorizontalAlignment="Center" Margin="0,0,0,5"/>
+                    <TextBlock Text="สั่งอาหาร" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+    
+</Page>

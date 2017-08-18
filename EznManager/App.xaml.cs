@@ -15,9 +15,9 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
-namespace EazyNoodle
+
+namespace EznManager
 {
-    
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
@@ -29,7 +29,7 @@ namespace EazyNoodle
         public static Microsoft.WindowsAzure.MobileServices.MobileServiceClient eazynooodleClient = new Microsoft.WindowsAzure.MobileServices.MobileServiceClient(
         "http://eazynooodle.azurewebsites.net");
 
-
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://eazynooodle.azurewebsites.net");
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code
         /// executed, and as such is the logical equivalent of main() or WinMain().
@@ -40,7 +40,6 @@ namespace EazyNoodle
             this.Suspending += OnSuspending;
         }
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("http://eazynooodle.azurewebsites.net");
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
