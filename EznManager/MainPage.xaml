@@ -26,8 +26,12 @@
                 <Rectangle Fill="Purple" Grid.Column="23"/>
                 <TextBlock Text="Status" FontSize="20" HorizontalAlignment="Center" Foreground="White" Grid.Column="3"/>
             </Grid>
+<<<<<<< HEAD
             <ScrollViewer Height="550">
                 <ListBox x:Name="ListItems">
+=======
+            <ListBox x:Name="ListItems">
+>>>>>>> 6d46a2dd9a723712affbe7918a1bb4e813bc8eb2
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -40,14 +44,21 @@
                             <TextBlock Name="ItemText" Text="{Binding OrderID}" Grid.Column="0" HorizontalAlignment="Center"/>
                             <TextBlock Name="ItemText2" Text="{Binding MachineID}"  Grid.Column="1" HorizontalAlignment="Center"/>
                             <TextBlock Name="ItemText3" Text="{Binding OrderDescription}" Grid.Column="2" HorizontalAlignment="Center"/>
+<<<<<<< HEAD
                             <Button Name="Proceed" Content="{Binding Status}" Grid.Column="3" HorizontalAlignment="Center" Click="Proceed_Click" Loaded="Proceed_Loaded"/>
+=======
+                            <Button Name="Proceed" Content="{Binding Status}" Grid.Column="3" HorizontalAlignment="Center" Click="Proceed_Click"/>
+>>>>>>> 6d46a2dd9a723712affbe7918a1bb4e813bc8eb2
                         </Grid>
                        
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
+<<<<<<< HEAD
             </ScrollViewer>
            
+=======
+>>>>>>> 6d46a2dd9a723712affbe7918a1bb4e813bc8eb2
         </StackPanel>
         
     </StackPanel>

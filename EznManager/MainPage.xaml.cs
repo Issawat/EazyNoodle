@@ -63,6 +63,7 @@ namespace EznManager
             await Order_DetailsObj.UpdateAsync(item);
             await RefreshOrder();
         }
+<<<<<<< HEAD
 
         private void Proceed_Loaded(object sender, RoutedEventArgs e)
         {
@@ -73,5 +74,7 @@ namespace EznManager
                 cb.IsEnabled = false ;
             }
         }
+=======
+>>>>>>> 6d46a2dd9a723712affbe7918a1bb4e813bc8eb2
     }
 }
