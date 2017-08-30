@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="EazyNoodle.dashboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EazyNoodle"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel>
+        <TextBlock Text="Order Sucess" FontSize="30" HorizontalAlignment="Center"  Margin="0,40,0,10"/>
+        <TextBlock Text="สั่งอาหารสำเร็จ" FontSize="30" HorizontalAlignment="Center"/>
+        <Image Source="http://jharkhandsuda.net/jharkhandmunicipal/common/images/correct.png" Width="80" Height="80" HorizontalAlignment="Center"/>
+        <TextBlock Text="Please be patient. You will get your noodle in shortly. " HorizontalAlignment="Center" Margin="0,30,0,40"/>
+        <TextBlock Text="กรุณารออาหารที่ท่านสั่งสักครู่" HorizontalAlignment="Center"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  Margin="0,50,0,40">
+            <Button Margin="5" Click="Button_Click" Padding="40,10,40,10" >
+                <StackPanel>
+                    <TextBlock Text="Make New Order" HorizontalAlignment="Center"/>
+                    <TextBlock Text="สั่งอาหารเพิ่ม" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Margin="5" Click="Button_Click_1" Padding="40,10,40,10" >
+                <StackPanel>
+                    <TextBlock Text="Bill Now" HorizontalAlignment="Center"/>
+                    <TextBlock Text="เรียกเก็บงเงิน" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>

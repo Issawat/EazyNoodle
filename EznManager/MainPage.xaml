@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="EznManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EznManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Margin="10">
+        <TextBlock Text="EazyNoodle Manager" FontSize="30" Margin="25" HorizontalAlignment="Center"/>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Fill="blue" Grid.Column="0"/>
+                <TextBlock Text="ID" FontSize="20" HorizontalAlignment="Center" Foreground="White" Grid.Column="0"/>
+                <Rectangle Fill="Green" Grid.Column="1"/>
+                <TextBlock Text="MachineID" FontSize="20" HorizontalAlignment="Center" Foreground="White" Grid.Column="1"/>
+                <Rectangle Fill="DarkOrange" Grid.Column="2"/>
+                <TextBlock Text="Descripiton" FontSize="20" HorizontalAlignment="Center" Foreground="White" Grid.Column="2"/>
+                <Rectangle Fill="Purple" Grid.Column="23"/>
+                <TextBlock Text="Status" FontSize="20" HorizontalAlignment="Center" Foreground="White" Grid.Column="3"/>
+            </Grid>
+            <ScrollViewer Height="550">
+                <ListBox x:Name="ListItems">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="190"/>
+                                <ColumnDefinition Width="170"/>
+                                <ColumnDefinition Width="790"/>
+                                <ColumnDefinition Width="180"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Name="ItemText" Text="{Binding OrderID}" Grid.Column="0" HorizontalAlignment="Center"/>
+                            <TextBlock Name="ItemText2" Text="{Binding MachineID}"  Grid.Column="1" HorizontalAlignment="Center"/>
+                            <TextBlock Name="ItemText3" Text="{Binding OrderDescription}" Grid.Column="2" HorizontalAlignment="Center"/>
+                            <Button Name="Proceed" Content="{Binding Status}" Grid.Column="3" HorizontalAlignment="Center" Click="Proceed_Click" Loaded="Proceed_Loaded"/>
+                        </Grid>
+                       
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            </ScrollViewer>
+           
+        </StackPanel>
+        
+    </StackPanel>
+</Page>

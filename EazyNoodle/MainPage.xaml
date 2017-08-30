@@ -6,8 +6,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <StackPanel Name="MainPanel">
+        <StackPanel Name="ActionBar" Orientation="Horizontal" Padding="15,15,15,15" Background="SkyBlue">
+            <Image Source="Assets/noodle-512.png" Height="107" Width="107"></Image>
+            <TextBlock Text="Eazy Noodle" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="36"></TextBlock>
+        </StackPanel>
+        <StackPanel Name="FrameView" Background="white">
+            <Frame Name="AppFrame"></Frame>
+        </StackPanel>
+    </StackPanel>
 </Page>
